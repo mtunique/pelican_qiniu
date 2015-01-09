@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup
 from sevencow import Cow
 
 import logging
+import urllib
+import time
 logger = logging.getLogger(__name__)
 
 BUCKET = None
@@ -26,15 +28,18 @@ def content_object_init(instance):
                     img_path = img_path[10:]
                 elif img_path.startswith('/static'):
                     img_path = img_path[7:]
-                else:
-                    continue
+                elif img_path.startswith('http://'):
+                    img_path = ''
+                    file_path = instance.settings['PATH']+'/'+img_filename
+                    if not (path.isfile(file_path) and access(file_path, R_OK)):
+                        urllib.urlretrieve(img['src'], file_path)
 
                 try:
                     # Build the source image filename
                     src = instance.settings['PATH'] + img_path + '/' + img_filename
 
                     if not (path.isfile(src) and access(src, R_OK)):
-                        logger.warning('pelican-qiniu. Error: image not found: {}'.format(src))
+                        logger.error('pelican-qiniu. Error: image not found: {}'.format(src))
                     BUCKET.put(src)
                     img['src'] = '{}{}'.format(instance.settings['QINIU_PRE'], img_filename)
                 except:
