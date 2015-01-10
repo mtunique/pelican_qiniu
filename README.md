@@ -1,9 +1,9 @@
-Pelican Qiniu
+###Pelican Qiniu
 ______
 
 This plugin allows you to use [qiniu](http://www.qiniu.com/) to serve your static files.
 
-Dependency
+###Dependency
 ______
 - [bs4](http://www.crummy.com/software/BeautifulSoup/)
 - [sevencow](https://github.com/yueyoum/seven-cow)
@@ -12,7 +12,7 @@ ______
 $ pip install sevencow beautifulsoup4
 ```
 
-Settings
+###Settings
 ______
 |Setting name|What does it do?|
 |————————————|————————————————|
