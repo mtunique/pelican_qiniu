@@ -19,5 +19,5 @@ $ pip install sevencow beautifulsoup4
 | QINIU_BUCKET | Which bucket do you want the files to save in? |
 | QINIU_PRE | url prefix |
 
-##LICENCE
-GPL
+##LICENSE
+[GPL](https://github.com/mtunique/pelican_qiniu/blob/master/LICENSE)
