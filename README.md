@@ -1,5 +1,4 @@
 #Pelican Qiniu
-______
 
 This plugin allows you to use [qiniu](http://www.qiniu.com/) to serve your static files.
 
