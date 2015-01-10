@@ -13,7 +13,7 @@ $ pip install sevencow beautifulsoup4
 
 ###Settings
 
-| Setting name | What does it do?|
+| Setting name | What does it do? |
 | :————————————: | ———————————————— |
 | QINIU_AK | qiniu access key |
 | QINIU_SK | qiniu secret key |
