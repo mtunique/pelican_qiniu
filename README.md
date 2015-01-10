@@ -1,4 +1,7 @@
 #Pelican Qiniu
+[![status](https://sourcegraph.com/api/repos/github.com/mtunique/pelican_qiniu/.badges/status.png)](https://sourcegraph.com/github.com/mtunique/pelican_qiniu)
+[![views](https://sourcegraph.com/api/repos/github.com/mtunique/pelican_qiniu/.counters/views.png)](https://sourcegraph.com/github.com/mtunique/pelican_qiniu)
+——————————
 
 This plugin allows you to use [qiniu](http://www.qiniu.com/) to serve your static files.
 
