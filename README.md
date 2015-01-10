@@ -14,7 +14,7 @@ $ pip install sevencow beautifulsoup4
 ###Settings
 
 | Setting name | What does it do? |
-| :————————————: | ———————————————— |
+| :----------: | ---------------- |
 | QINIU_AK | qiniu access key |
 | QINIU_SK | qiniu secret key |
 | QINIU_BUCKET | Which bucket do you want the files to save in? |
