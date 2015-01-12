@@ -23,3 +23,7 @@ $ pip install sevencow beautifulsoup4
 
 ##LICENSE
 [GPL](https://github.com/mtunique/pelican_qiniu/blob/master/LICENSE)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mtunique/pelican_qiniu/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
